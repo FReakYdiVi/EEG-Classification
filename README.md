@@ -1,6 +1,6 @@
 # **EEG-Classification for different Cognitive States** 
 
-This project is a joint effort with neurology labs at UNL and UCD Anschutz to use deep learning to classify EEG Signals related to their state.
+This project is to use deep learning to classify EEG Signals related to subject's state.
 
 The goal is to use various data processing techniques, feature extraction techniqus and making deep neural network architectures to perserve both spacial and time information in the classification of EEG data.
 
@@ -62,7 +62,15 @@ The signals are of 0.5-45 Hz, with a sampling rate 500Hz.
 
 You can clearly see that how using psd as feature extraction method is much better.
 
-2. The second approach was based on The EEG signals acquired from the dataset were augmented using a **variational autoencoder** (VAE).The augmented EEG signals were saved and later used for training the classifier
+2. The second approach was based on The EEG signals acquired from the dataset were augmented using a **variational autoencoder** (VAE).The augmented EEG signals were later used for Classifier model.There are two CLassifier models, EEGnet and other one is from [research paper](https://arxiv.org/pdf/2302.00789#:~:text=Specifically%2C%20a%20novel%20variational%20autoencoder,1%2D%20D%20convolutional%20neural%20network).
+The data used in paper is different so we have to upate the kernel size and layers. 
+
+Overall archiecture of Proposed model
+![Alt text](Screenshot%202024-07-06%20at%2011.06.26%E2%80%AFAM.png)
+
+## *Result of Second Approach* 
+
+
 
 
 
